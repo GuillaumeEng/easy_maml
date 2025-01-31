@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+easy_maml.egg-info/PKG-INFO
+easy_maml.egg-info/SOURCES.txt
+easy_maml.egg-info/dependency_links.txt
+easy_maml.egg-info/top_level.txt
