@@ -21,14 +21,14 @@ MuJoCo rendering can be tough to make working, so the following are recommendati
 The only available for multitasking, HalfCheetahDir is HalfCheetah where each task correspond to a different direction. It is launched using the following line:
 ```
 pip install -e 
-python easy_maml/scripts/run_hw2.py --env_name HalfCheetahDir -rtg --discount 0.95 --maml --exp_name HalfCheetah_MAML_PG
+python easy_maml/scripts/run_main.py --env_name HalfCheetahDir -rtg --discount 0.95 --maml --exp_name HalfCheetah_MAML_PG
 ```
 
 ## Testing a Policy Gradient 
 During the test we load the trained model and we will perform a few gradient pass to get it to specialise on the task.
 ```
 pip install -e 
-python easy_maml/scripts/run_hw2.py --env_name HalfCheetahDir -n 10 -rtg --discount 0.95 -lr 0.01 --test --video_log_freq 9 --exp_name HalfCheetah_PG
+python easy_maml/scripts/run_main.py --env_name HalfCheetahDir -n 10 -rtg --discount 0.95 -lr 0.01 --test --video_log_freq 9 --exp_name HalfCheetah_PG
 ```
 ## Acknowledgements
 This project is an implementation of the following paper:
